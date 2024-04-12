@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.error-icon {
+    color: rgb(22, 21, 21); /* Red color for error icon */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display:none;
+    
+    
+}
+.error-icon i {
+    font-size: 16px;
+}
+.error-tooltip {
+    display: none;
+   
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: rgba(255, 0, 0, 0.8);
+    color: #ffffff;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.modal {
+    display: none;
+}
+
+.modal-dialog {
+    max-width: 400px;
+}
+
+.modal-content {
+    border-radius: 8px;
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 8px 8px 0 0;
+}
+
+.modal-body {
+    text-align: center;
+    font-weight: bold;
+}

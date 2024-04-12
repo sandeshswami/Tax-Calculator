@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Tax Calculator</h1>
+    <form id="taxForm">
+        <div class="form-group">
+            <label for="income">Enter gross annual income <span class="info-icon" data-toggle="tooltip" data-placement="right" title="Gross annual income is your total salary in a year before any deductions
+                "><i class="fas fa-question-circle"></i></span></label>
+            <div class="input-group">
+                <input type="text" class="form-control" id="income" name="income" placeholder="Enter gross annual income" required>
+                <div class="input-group-append">
+                    <span class="error-icon" data-toggle="tooltip" data-placement="right" title="Please enter numbers only"><i class="fas fa-exclamation-circle"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="extraIncome">Enter extra income <span class="info-icon" data-toggle="tooltip" data-placement="right" title="Extra income is money you earn in addition to your regular paycheck"><i class="fas fa-question-circle"></i></span></label>
+            <div class="input-group">
+            <input type="text" class="form-control" id="extraIncome" name="extraIncome" placeholder="Enter extra income" required>
+            <div class="input-group-append">
+                <span class="error-icon" data-toggle="tooltip" data-placement="right" title="Please enter numbers only"><i class="fas fa-exclamation-circle"></i></span>
+            </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="age">Enter age group  <span class="info-icon" data-toggle="tooltip" data-placement="right" title="people within a particular range of ages"><i class="fas fa-question-circle"></i></span></label>
+            <select class="form-control" id="age" name="age" required>
+                <option value="<40">&lt; 40</option>
+                <option value="40-59">≥ 40 &lt; 60</option>
+                <option value="60+">≥ 60</option>
+            </select>
+            
+        </div>
+
+        <div class="form-group">
+            <label for="deductions">Enter total applicable deductions <span class="info-icon" data-toggle="tooltip" data-placement="right" title="Deductions are the amount of money offered to an employee but is not part of the take-home salary of an employee."><i class="fas fa-question-circle"></i></span></label>
+            <div class="input-group">
+            <input type="text" class="form-control" id="deductions" name="deductions" placeholder="Enter total deductions" required>
+            <div class="input-group-append">
+                <span class="error-icon" data-toggle="tooltip" data-placement="right" title="Please enter numbers only"><i class="fas fa-exclamation-circle"></i></span>
+            </div>
+            </div>
+            
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+    </form>
+</div>
+
+<!-- Result Modal -->
+<div class="modal" id="resultModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Tax Calculation Result</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <p id="taxAmount"></p>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
