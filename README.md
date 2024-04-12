@@ -6,7 +6,8 @@ A website that allows for tax calculation based on a users input.
 ![Capture2](https://github.com/sandeshswami/Tax-Calculator/assets/126974679/1ceb29b2-f805-4247-802a-905cf8b58f5b)
 ![Capture3](https://github.com/sandeshswami/Tax-Calculator/assets/126974679/3419aafd-c99c-420e-bfc5-913acc61278d)
 ![Capture4](https://github.com/sandeshswami/Tax-Calculator/assets/126974679/7c83634a-c10b-4402-973a-528425dc62ca)
-![Capture5](https://github.com/sandeshswami/Tax-Calculator/assets/126974679/2103cc0f-e4f2-474a-8e56-2eb160af0ba2)
+![Capture5](https://github.com/sandeshswami/Tax-Calculator/assets/126974679/bc2c4bbd-37b6-40d1-a995-d3845a22cb10)
+
 
 ### References & Requirements
 
